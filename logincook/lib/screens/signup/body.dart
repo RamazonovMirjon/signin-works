@@ -4,8 +4,8 @@ import 'package:logincook/components/remember_me_and_forget_password.dart';
 import 'package:logincook/components/rounded_imput_field.dart';
 import 'package:logincook/components/rounded_password_field.dart';
 import 'package:logincook/constants/color_const.dart';
-import 'package:logincook/screens/login/background.dart';
-import 'package:logincook/screens/signup/signup_screen.dart';
+import 'package:logincook/screens/login/login_screen.dart';
+import 'package:logincook/screens/signup/background.dart';
 
 class Body extends StatelessWidget {
   const Body({Key? key}) : super(key: key);
@@ -20,27 +20,28 @@ class Body extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Text(
-              'Sign in',
+              'Sign Up',
               style: TextStyle(
                 color: ColorConst.kPrimaryColor,
                 fontSize: 22,
                 fontFamily: "Rambla",
               ),
             ),
-            SizedBox(height: size.height * 0.05),
+            RoundedImputField(
+              text: "Full Name",
+              onChanged: (v) {},
+            ),
             RoundedImputField(
               text: "Email",
               onChanged: (v) {},
             ),
-            SizedBox(height: size.height * 0.01),
             RoundedPasswordField(
               onChanged: (v) {},
-              page: const SignupScreen(),
+              page: const LoginScreen(),
             ),
-            SizedBox(height: size.height * 0.03),
             const RememberAndForgetPassword(),
             SizedBox(height: size.height * 0.03),
-            const MixWidgetsPageButton(),
+            const MixWidgetsPageButton(login: false),
             SizedBox(height: size.height * 0.03),
           ],
         ),
