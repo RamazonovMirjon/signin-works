@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:logincook/components/mix_widgets_page_button.dart';
 import 'package:logincook/components/remember_me_and_forget_password.dart';
 import 'package:logincook/components/rounded_imput_field.dart';
 import 'package:logincook/components/rounded_password_field.dart';
@@ -34,6 +35,7 @@ class Body extends StatelessWidget {
           page: const SignupScreen(),
         ),
         const RememberAndForgetPassword(),
+        const MixWidgetsPageButton(),
         
       ],
     ));

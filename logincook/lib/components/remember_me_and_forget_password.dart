@@ -10,8 +10,9 @@ class RememberAndForgetPassword extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 30),
+      padding:  EdgeInsets.symmetric(horizontal: size.width*0.1,vertical: size.height*0.02),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
