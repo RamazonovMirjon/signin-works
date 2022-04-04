@@ -18,7 +18,7 @@ class MixWidgetsPageButton extends StatelessWidget {
       children: [
         _OrSignInWith(size: size, divider: divider, login: login),
         Padding(
-          padding: EdgeInsets.all(size.height * 0.03),
+          padding: EdgeInsets.all(size.height * 0.02),
           child: InkWell(
             onTap: () {},
             child: const Image(

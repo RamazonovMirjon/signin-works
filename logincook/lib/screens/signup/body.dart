@@ -6,6 +6,7 @@ import 'package:logincook/components/rounded_password_field.dart';
 import 'package:logincook/constants/color_const.dart';
 import 'package:logincook/screens/login/login_screen.dart';
 import 'package:logincook/screens/signup/background.dart';
+import 'package:logincook/screens/signup/components/service_and_privacy.dart';
 
 class Body extends StatelessWidget {
   const Body({Key? key}) : super(key: key);
@@ -39,10 +40,10 @@ class Body extends StatelessWidget {
               onChanged: (v) {},
               page: const LoginScreen(),
             ),
+            const ServiceAndPrivacy(),
             const RememberAndForgetPassword(),
-            SizedBox(height: size.height * 0.03),
             const MixWidgetsPageButton(login: false),
-            SizedBox(height: size.height * 0.03),
+            SizedBox(height: size.height * 0.02),
           ],
         ),
       ),
