@@ -11,6 +11,7 @@ class RoundedButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
+         
           elevation: 7,
           animationDuration: const Duration(milliseconds: 500),
           fixedSize: const Size(193, 45),

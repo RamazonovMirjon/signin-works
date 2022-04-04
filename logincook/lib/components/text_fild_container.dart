@@ -19,12 +19,12 @@ class TextFildContainer extends StatelessWidget {
       width: size.width * 0.8,
       decoration: BoxDecoration(
           boxShadow: [
-            
             BoxShadow(
-                blurRadius: 4,
-                blurStyle: BlurStyle.normal,
-                offset: Offset.zero,
-                spreadRadius: 7),
+              blurRadius: 2,
+              color: ColorConst.kBlackColor.withOpacity(0.2),
+              spreadRadius: 4,
+              offset: const Offset(0, 5),
+            ),
           ],
           color: ColorConst.kPrimaryColor,
           borderRadius: const BorderRadius.all(Radius.circular(30))),

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:logincook/components/text_fild_container.dart';
 import 'package:logincook/constants/color_const.dart';
-import 'package:logincook/screens/signup/signup_screen.dart';
 
 class RoundedPasswordField extends StatefulWidget {
   const RoundedPasswordField({

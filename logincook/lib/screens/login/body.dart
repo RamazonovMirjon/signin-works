@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:logincook/components/remember_me_and_forget_password.dart';
 import 'package:logincook/components/rounded_imput_field.dart';
 import 'package:logincook/components/rounded_password_field.dart';
 import 'package:logincook/constants/color_const.dart';
@@ -23,7 +24,7 @@ class Body extends StatelessWidget {
             fontFamily: "Rambla",
           ),
         ),
-        SizedBox(height: size.height*0.06),
+        SizedBox(height: size.height * 0.06),
         RoundedImputField(
           text: "Email",
           onChanged: (v) {},
@@ -32,14 +33,8 @@ class Body extends StatelessWidget {
           onChanged: (v) {},
           page: const SignupScreen(),
         ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Row(
-            children: [
-              
-            ],
-          ),
-        )
+        const RememberAndForgetPassword(),
+        
       ],
     ));
   }
