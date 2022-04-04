@@ -14,30 +14,38 @@ class Body extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Background(
+      child: SingleChildScrollView(
+        physics: const NeverScrollableScrollPhysics(),
+        reverse: true,
         child: Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Text(
-          'Sign in',
-          style: TextStyle(
-            color: ColorConst.kPrimaryColor,
-            fontSize: 22,
-            fontFamily: "Rambla",
-          ),
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            Text(
+              'Sign in',
+              style: TextStyle(
+                color: ColorConst.kPrimaryColor,
+                fontSize: 22,
+                fontFamily: "Rambla",
+              ),
+            ),
+            SizedBox(height: size.height * 0.05),
+            RoundedImputField(
+              text: "Email",
+              onChanged: (v) {},
+            ),
+            SizedBox(height: size.height * 0.01),
+            RoundedPasswordField(
+              onChanged: (v) {},
+              page: const SignupScreen(),
+            ),
+            SizedBox(height: size.height * 0.03),
+            const RememberAndForgetPassword(),
+            SizedBox(height: size.height * 0.03),
+            const MixWidgetsPageButton(),
+            SizedBox(height: size.height * 0.03),
+          ],
         ),
-        SizedBox(height: size.height * 0.06),
-        RoundedImputField(
-          text: "Email",
-          onChanged: (v) {},
-        ),
-        RoundedPasswordField(
-          onChanged: (v) {},
-          page: const SignupScreen(),
-        ),
-        const RememberAndForgetPassword(),
-        const MixWidgetsPageButton(),
-        
-      ],
-    ));
+      ),
+    );
   }
 }

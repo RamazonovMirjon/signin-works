@@ -15,7 +15,8 @@ class Background extends StatelessWidget {
             right: 0,
             left: 0,
             child: Image.asset(
-              "assets/images/Berry's 1 (1).png",height: size.height*0.4,
+              "assets/images/Berry's 1 (1).png",
+              height: size.height * 0.4,
             ),
           ),
           Positioned(
@@ -30,7 +31,13 @@ class Background extends StatelessWidget {
               },
             ),
           ),
-          Center(child: child),
+          Positioned(
+            bottom: 0,
+            left: 0,
+            right: 0,
+            top: size.height * 0.3,
+            child: child,
+          ),
         ],
       ),
     );

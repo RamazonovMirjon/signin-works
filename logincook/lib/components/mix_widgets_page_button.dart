@@ -97,12 +97,12 @@ class _AlreadyHaveAnAccountAcheck extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) =>
-                    login ? const LoginScreen() : const SignupScreen(),
+                    login ? const SignupScreen() : const LoginScreen(),
               ),
             );
           },
           child: Text(
-            "Sign Up",
+            login ? "Sign Up" : "Sign In",
             style: TextStyle(
               color: ColorConst.kPrimaryColor,
               fontSize: 16,
