@@ -19,6 +19,7 @@ class Body extends StatelessWidget {
         reverse: true,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
               'Sign Up',

@@ -19,22 +19,21 @@ class ServiceAndPrivacy extends StatelessWidget {
       fontSize: 14,
       fontFamily: "Rambla",
     );
-    return Center(
-      child: Row(
-        children: [
-          const MyCheckbox(),
-          Text("I agree to the terms of", style: textStyleblack),
-          InkWell(
-            onTap: () {},
-            child: Text("service", style: textStyle),
-          ),
-          Text(" and the ", style: textStyleblack),
-          InkWell(
-            onTap: () {},
-            child: Text("privacy policy", style: textStyle),
-          ),
-        ],
-      ),
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        const MyCheckbox(),
+        Text("I agree to the terms of", style: textStyleblack),
+        InkWell(
+          onTap: () {},
+          child: Text("service", style: textStyle),
+        ),
+        Text(" and the ", style: textStyleblack),
+        InkWell(
+          onTap: () {},
+          child: Text("privacy policy", style: textStyle),
+        ),
+      ],
     );
   }
 }
