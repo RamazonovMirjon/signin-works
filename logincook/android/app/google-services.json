@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "372063671702",
+    "project_id": "login-f49df",
+    "storage_bucket": "login-f49df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372063671702:android:5440dae25e7f730fa579b7",
+        "android_client_info": {
+          "package_name": "com.mirjonramazonov.logincook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "372063671702-ofns4gvau8s6vpe5gs00q9htjqg3hdga.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mirjonramazonov.logincook",
+            "certificate_hash": "4294cf90d80948d29a1aaee268870653015c4fd6"
+          }
+        },
+        {
+          "client_id": "372063671702-05ra9guahj0fc88kmdlneeupfb6rgf4p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHFWgi4MTkSzIHMTHd7ndd_evRQjm_Tos"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "372063671702-05ra9guahj0fc88kmdlneeupfb6rgf4p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
